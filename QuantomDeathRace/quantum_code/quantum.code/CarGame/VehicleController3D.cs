@@ -12,12 +12,12 @@ namespace Quantum
         public void Move(FrameBase frame, EntityRef entity, FPVector3 direction)
         {
             PhysicsBody3D* pb = null;
+
             if (frame.Unsafe.TryGetPointer(entity, out pb) == false)
             {
                 return;
             }
 
-            // Use the provided direction for moving the entity
             pb->AddForce(direction * 100);
         }
 

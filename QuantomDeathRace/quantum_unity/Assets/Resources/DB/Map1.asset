@@ -85,7 +85,9 @@ MonoBehaviour:
       MutableMode: 0
     MapEntities: []
   Prototypes:
-  - PlayerLink: []
+  - EnemyController: []
+    EnemySpawner: []
+    PlayerLink: []
     VehicleController3D: []
     CharacterController2D: []
     CharacterController3D: []
@@ -117,6 +119,81 @@ MonoBehaviour:
         _hasValue: 0
         _value:
           RawValue: 65536
+    PhysicsCollider2D: []
+    PhysicsCollider3D:
+    - ShapeConfig:
+        ShapeType: 1
+        SphereRadius:
+          RawValue: 32768
+        PositionOffset:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+        BoxExtents:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+        RotationOffset:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+        UserTag: 0
+        IsPersistent: 1
+        CompoundShapes: []
+        IsSetFromSourceCollider: 0
+      Layer: 0
+      IsTrigger: 0
+      PhysicsMaterial:
+        Id:
+          Value: 0
+    PhysicsCallbacks2D: []
+    PhysicsCallbacks3D:
+    - CallbackFlags:
+        Value: 0
+    Transform2D: []
+    Transform2DVertical: []
+    Transform3D:
+    - Position:
+        X:
+          RawValue: -483000
+        Y:
+          RawValue: 113377
+        Z:
+          RawValue: 0
+      Rotation:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
+    View: []
+    PhysicsJoints2D: []
+    PhysicsJoints3D: []
+  - EnemyController: []
+    EnemySpawner:
+    - prototype:
+        Id:
+          Value: 1455234761808745826
+    PlayerLink: []
+    VehicleController3D: []
+    CharacterController2D: []
+    CharacterController3D: []
+    NavMeshAvoidanceAgent: []
+    NavMeshAvoidanceObstacle: []
+    NavMeshPathfinder: []
+    NavMeshSteeringAgent: []
+    PhysicsBody2D: []
+    PhysicsBody3D: []
     PhysicsCollider2D: []
     PhysicsCollider3D:
     - ShapeConfig:
@@ -162,22 +239,24 @@ MonoBehaviour:
     Transform3D:
     - Position:
         X:
-          RawValue: 0
+          RawValue: -245104
         Y:
-          RawValue: 304742
+          RawValue: 56360
         Z:
           RawValue: 0
       Rotation:
         X:
-          RawValue: 2949120
+          RawValue: 0
         Y:
           RawValue: 0
         Z:
-          RawValue: 2949119
+          RawValue: 0
     View: []
     PhysicsJoints2D: []
     PhysicsJoints3D: []
-  - PlayerLink: []
+  - EnemyController: []
+    EnemySpawner: []
+    PlayerLink: []
     VehicleController3D:
     - _empty_prototype_dummy_field_: 0
     CharacterController2D: []
@@ -240,7 +319,7 @@ MonoBehaviour:
         UserTag: 0
         IsPersistent: 1
         CompoundShapes: []
-        IsSetFromSourceCollider: 1
+        IsSetFromSourceCollider: 0
       Layer: 0
       IsTrigger: 0
       PhysicsMaterial:

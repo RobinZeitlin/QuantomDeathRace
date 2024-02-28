@@ -72,6 +72,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CarGame\EnemyController.cs" />
+    <Compile Include="CarGame\EnemyData.cs" />
+    <Compile Include="CarGame\EnemySpawnSystem.cs" />
     <Compile Include="CarGame\MovementSystem.cs" />
     <Compile Include="CarGame\PlayerSpawnSystem.cs" />
     <Compile Include="CarGame\VehicleController3D.cs" />
@@ -94,6 +97,10 @@
     <Content Include="CarGame\Input.qtn" />
     <Content Include="CarGame\PlayerLink.qtn" />
     <Content Include="CarGame\VehicleController3D.qtn" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CarGame\EnemyController.qtn" />
+    <None Include="CarGame\EnemySpawner.qtn" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
