@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="CarGame\EnemyController.cs" />
     <Compile Include="CarGame\EnemyData.cs" />
+    <Compile Include="CarGame\EnemyMovement.cs" />
     <Compile Include="CarGame\EnemySpawnSystem.cs" />
     <Compile Include="CarGame\MovementSystem.cs" />
     <Compile Include="CarGame\PlayerSpawnSystem.cs" />

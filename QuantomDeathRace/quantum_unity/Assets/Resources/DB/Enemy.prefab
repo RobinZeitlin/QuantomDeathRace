@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 431987588258406312}
   - component: {fileID: 6235815601033528070}
   - component: {fileID: 7542605506800880988}
+  - component: {fileID: 5048751577732606153}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -42,7 +43,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6809289319011377302}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &431987588258406312
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -169,7 +170,7 @@ MonoBehaviour:
     CallbackFlags:
       Value: 0
   PhysicsBody:
-    IsEnabled: 1
+    IsEnabled: 0
     Version2D: 2
     Version3D: 2
     Config2D: 116
@@ -263,6 +264,20 @@ MonoBehaviour:
   OnEntityDestroyed:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5048751577732606153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6809289319011377302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72b925e386af7394b80ce6dd3fee2ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prototype:
+    _empty_prototype_dummy_field_: 0
 --- !u!114 &-5691637116287907778
 MonoBehaviour:
   m_ObjectHideFlags: 0

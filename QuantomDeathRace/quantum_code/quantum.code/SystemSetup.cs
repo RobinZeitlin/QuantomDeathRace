@@ -27,6 +27,7 @@ namespace Quantum {
         new MovementSystem(),
         new PlayerSpawnSystem(),
         new EnemySpawnSystem(),
+        new EnemyMovement(),
         
       };
     }

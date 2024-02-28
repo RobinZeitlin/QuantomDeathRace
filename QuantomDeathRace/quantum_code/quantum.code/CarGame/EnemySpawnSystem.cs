@@ -8,7 +8,6 @@ using static Quantum.CarGame.MovementSystem;
 
 namespace Quantum.CarGame
 {
-
     public unsafe class EnemySpawnSystem : SystemMainThreadFilter<EnemySpawnSystem.Filter>
     {
         public struct Filter
@@ -17,7 +16,7 @@ namespace Quantum.CarGame
             public EnemySpawner* spawner;
         }
 
-        private FP delayDuration = 1;
+        private FP delayDuration = 3;
         private FP timeSinceLastSpawn = FP._0;
 
         public override void Update(Frame f, ref Filter filter)
@@ -31,8 +30,6 @@ namespace Quantum.CarGame
                 FPVector2 spawnPosition = new FPVector2(1, 1);
                 var prototypeId = filter.spawner->prototype.Id;
 
-                Log.Debug("Spawning enemy");
-
                 SpawnEntity(f, prototypeId, spawnPosition);
             }
         }
@@ -42,8 +39,6 @@ namespace Quantum.CarGame
             EntityPrototype prototype = frame.FindAsset<EntityPrototype>(prototypeId);
 
             EntityRef entity = frame.Create(prototype);
-
-            Log.Debug($"Spawned entity {entity} at position {position}");
         }
 
     }

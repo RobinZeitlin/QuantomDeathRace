@@ -3,7 +3,7 @@ using Quantum;
 
 namespace Quantum.CarGame;
 
-public unsafe class MovementSystem : SystemMainThreadFilter<MovementSystem.Filter>
+public unsafe class MovementSystem : SystemMainThreadFilter<MovementSystem.Filter> 
 {
     public struct Filter
     {

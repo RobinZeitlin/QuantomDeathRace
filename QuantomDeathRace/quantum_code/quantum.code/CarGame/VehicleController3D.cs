@@ -1,6 +1,7 @@
 using Photon.Deterministic;
 using Quantum.Core;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 
 
 #nullable disable
